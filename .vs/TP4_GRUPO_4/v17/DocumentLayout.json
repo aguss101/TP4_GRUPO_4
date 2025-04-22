@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\agusp\\Downloads\\Git\\TP4_GRUPO_4\\TP4_GRUPO_4\\",
+  "WorkspaceRootPath": "C:\\Users\\agusp\\Downloads\\Git\\TP4_GRUPO_4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|c:\\users\\agusp\\downloads\\git\\tp4_grupo_4\\tp4_grupo_4\\mainform.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|c:\\users\\agusp\\downloads\\git\\tp4_grupo_4\\mainform.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|solutionrelative:mainform.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
@@ -28,9 +28,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainForm.aspx",
-              "DocumentMoniker": "C:\\Users\\agusp\\Downloads\\Git\\TP4_GRUPO_4\\TP4_GRUPO_4\\MainForm.aspx",
+              "DocumentMoniker": "C:\\Users\\agusp\\Downloads\\Git\\TP4_GRUPO_4\\MainForm.aspx",
               "RelativeDocumentMoniker": "MainForm.aspx",
-              "ToolTip": "C:\\Users\\agusp\\Downloads\\Git\\TP4_GRUPO_4\\TP4_GRUPO_4\\MainForm.aspx",
+              "ToolTip": "C:\\Users\\agusp\\Downloads\\Git\\TP4_GRUPO_4\\MainForm.aspx",
               "RelativeToolTip": "MainForm.aspx",
               "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
