@@ -13,5 +13,25 @@ namespace TP4_GRUPO_4
         {
 
         }
+
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnEj1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Ejercicio1.aspx");
+        }
+
+        protected void btnEj2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Ejercicio2.aspx");
+        }
+
+        protected void btnEj3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Ejercicio3.aspx");
+        }
     }
 }
