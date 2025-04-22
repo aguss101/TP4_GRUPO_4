@@ -38,10 +38,7 @@
                 <td class="auto-style3">
                     <asp:Label ID="lbl_IDp" runat="server" Text="Id Producto:"></asp:Label>
                 </td>
-                <td class="auto-style4">
-                    <asp:DropDownList ID="DropDownList2" runat="server">
-                    </asp:DropDownList>
-                </td>
+                <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style4"></td>
                 <td class="auto-style4"></td>
                 <td class="auto-style4">

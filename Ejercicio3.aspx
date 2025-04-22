@@ -16,6 +16,9 @@
         .auto-style3 {
             width: 159px;
         }
+        .auto-style4 {
+            width: 208px;
+        }
     </style>
 </head>
 <body>
@@ -25,7 +28,7 @@
         <table class="auto-style1">
             <tr>
                 <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
@@ -33,7 +36,10 @@
                 <td class="auto-style3">
                     <asp:Label ID="lblTheme" runat="server" Text="Seleccionar Tema:"></asp:Label>
                 </td>
-                <td>&nbsp;</td>
+                <td class="auto-style4">
+                    <asp:DropDownList ID="DropDownList1" runat="server">
+                    </asp:DropDownList>
+                </td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>
                     <asp:Button ID="btnVolver" runat="server" Text="Volver" OnClick="btnVolver_Click" />
@@ -41,49 +47,49 @@
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
