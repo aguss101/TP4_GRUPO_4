@@ -1,9 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\agusp\\Downloads\\Git\\TP4_GRUPO_4\\",
+  "WorkspaceRootPath": "C:\\Users\\luka\\Desktop\\Proyecto\\TP4_GRUPO_4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|c:\\users\\agusp\\downloads\\git\\tp4_grupo_4\\mainform.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|c:\\users\\luka\\desktop\\proyecto\\tp4_grupo_4\\ejercicio3.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|solutionrelative:ejercicio3.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|c:\\users\\luka\\desktop\\proyecto\\tp4_grupo_4\\ejercicio3.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|solutionrelative:ejercicio3.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|c:\\users\\luka\\desktop\\proyecto\\tp4_grupo_4\\ejercicio1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|solutionrelative:ejercicio1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|c:\\users\\luka\\desktop\\proyecto\\tp4_grupo_4\\ejercicio2.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|solutionrelative:ejercicio2.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|c:\\users\\luka\\desktop\\proyecto\\tp4_grupo_4\\ejercicio2.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|solutionrelative:ejercicio2.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|c:\\users\\luka\\desktop\\proyecto\\tp4_grupo_4\\ejercicio1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|solutionrelative:ejercicio1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|c:\\users\\luka\\desktop\\proyecto\\tp4_grupo_4\\mainform.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|solutionrelative:mainform.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
@@ -14,23 +38,101 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Ejercicio2.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\luka\\Desktop\\Proyecto\\TP4_GRUPO_4\\Ejercicio2.aspx.cs",
+              "RelativeDocumentMoniker": "Ejercicio2.aspx.cs",
+              "ToolTip": "C:\\Users\\luka\\Desktop\\Proyecto\\TP4_GRUPO_4\\Ejercicio2.aspx.cs",
+              "RelativeToolTip": "Ejercicio2.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T04:43:04.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Ejercicio2.aspx",
+              "DocumentMoniker": "C:\\Users\\luka\\Desktop\\Proyecto\\TP4_GRUPO_4\\Ejercicio2.aspx",
+              "RelativeDocumentMoniker": "Ejercicio2.aspx",
+              "ToolTip": "C:\\Users\\luka\\Desktop\\Proyecto\\TP4_GRUPO_4\\Ejercicio2.aspx",
+              "RelativeToolTip": "Ejercicio2.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-24T04:31:52.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ejercicio3.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\luka\\Desktop\\Proyecto\\TP4_GRUPO_4\\Ejercicio3.aspx.cs",
+              "RelativeDocumentMoniker": "Ejercicio3.aspx.cs",
+              "ToolTip": "C:\\Users\\luka\\Desktop\\Proyecto\\TP4_GRUPO_4\\Ejercicio3.aspx.cs",
+              "RelativeToolTip": "Ejercicio3.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T03:18:41.425Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Ejercicio3.aspx",
+              "DocumentMoniker": "C:\\Users\\luka\\Desktop\\Proyecto\\TP4_GRUPO_4\\Ejercicio3.aspx",
+              "RelativeDocumentMoniker": "Ejercicio3.aspx",
+              "ToolTip": "C:\\Users\\luka\\Desktop\\Proyecto\\TP4_GRUPO_4\\Ejercicio3.aspx",
+              "RelativeToolTip": "Ejercicio3.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-24T03:17:59.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Ejercicio1.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\luka\\Desktop\\Proyecto\\TP4_GRUPO_4\\Ejercicio1.aspx.cs",
+              "RelativeDocumentMoniker": "Ejercicio1.aspx.cs",
+              "ToolTip": "C:\\Users\\luka\\Desktop\\Proyecto\\TP4_GRUPO_4\\Ejercicio1.aspx.cs",
+              "RelativeToolTip": "Ejercicio1.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T02:56:34.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Ejercicio1.aspx",
+              "DocumentMoniker": "C:\\Users\\luka\\Desktop\\Proyecto\\TP4_GRUPO_4\\Ejercicio1.aspx",
+              "RelativeDocumentMoniker": "Ejercicio1.aspx",
+              "ToolTip": "C:\\Users\\luka\\Desktop\\Proyecto\\TP4_GRUPO_4\\Ejercicio1.aspx",
+              "RelativeToolTip": "Ejercicio1.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-24T02:56:29.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "MainForm.aspx",
-              "DocumentMoniker": "C:\\Users\\agusp\\Downloads\\Git\\TP4_GRUPO_4\\MainForm.aspx",
+              "DocumentMoniker": "C:\\Users\\luka\\Desktop\\Proyecto\\TP4_GRUPO_4\\MainForm.aspx",
               "RelativeDocumentMoniker": "MainForm.aspx",
-              "ToolTip": "C:\\Users\\agusp\\Downloads\\Git\\TP4_GRUPO_4\\MainForm.aspx",
+              "ToolTip": "C:\\Users\\luka\\Desktop\\Proyecto\\TP4_GRUPO_4\\MainForm.aspx",
               "RelativeToolTip": "MainForm.aspx",
               "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",

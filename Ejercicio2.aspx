@@ -38,7 +38,14 @@
                 <td class="auto-style3">
                     <asp:Label ID="lbl_IDp" runat="server" Text="Id Producto:"></asp:Label>
                 </td>
-                <td class="auto-style4">&nbsp;</td>
+                <td class="auto-style4">
+                    <asp:DropDownList ID="ddlIDProduct" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                        <asp:ListItem>Igual a:</asp:ListItem>
+                        <asp:ListItem>Mayor a:</asp:ListItem>
+                        <asp:ListItem Value="Menor a:">Menor a:</asp:ListItem>
+                    </asp:DropDownList>
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                </td>
                 <td class="auto-style4"></td>
                 <td class="auto-style4"></td>
                 <td class="auto-style4">
@@ -48,8 +55,12 @@
             <tr>
                 <td class="auto-style2">Id Categoria:</td>
                 <td>
-                    <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                    <asp:DropDownList ID="ddlIDCategory" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                        <asp:ListItem>Igual a:</asp:ListItem>
+                        <asp:ListItem>Mayor a:</asp:ListItem>
+                        <asp:ListItem>Menor a:</asp:ListItem>
                     </asp:DropDownList>
+                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -64,7 +75,10 @@
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:GridView ID="gvProductos" runat="server">
+                    </asp:GridView>
+                </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>

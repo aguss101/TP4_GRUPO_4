@@ -19,6 +19,21 @@
         .auto-style4 {
             width: 208px;
         }
+        .auto-style5 {
+            width: 159px;
+            height: 23px;
+        }
+        .auto-style6 {
+            width: 208px;
+            height: 23px;
+        }
+        .auto-style7 {
+            width: 822px;
+            height: 23px;
+        }
+        .auto-style8 {
+            height: 23px;
+        }
     </style>
 </head>
 <body>
@@ -37,8 +52,9 @@
                     <asp:Label ID="lblTheme" runat="server" Text="Seleccionar Tema:"></asp:Label>
                 </td>
                 <td class="auto-style4">
-                    <asp:DropDownList ID="DropDownList1" runat="server">
+                    <asp:DropDownList ID="ddlThemes" runat="server" DataSourceID="SqlDataLibrary" DataValueField="Tema">
                     </asp:DropDownList>
+                    <asp:SqlDataSource ID="SqlDataLibrary" runat="server" ConnectionString="<%$ ConnectionStrings:LibreriaConnectionString %>" ProviderName="<%$ ConnectionStrings:LibreriaConnectionString.ProviderName %>" SelectCommand="SELECT [Tema] FROM [Temas]"></asp:SqlDataSource>
                 </td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>
@@ -52,10 +68,18 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style3">
+                    <asp:LinkButton ID="lbBooks" runat="server">Ver Libros</asp:LinkButton>
+                </td>
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style6"></td>
+                <td class="auto-style7"></td>
+                <td class="auto-style8"></td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
@@ -70,16 +94,10 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style5"></td>
+                <td class="auto-style6"></td>
+                <td class="auto-style7"></td>
+                <td class="auto-style8"></td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>

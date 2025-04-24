@@ -13,6 +13,9 @@
         .auto-style2 {
             width: 258px;
         }
+        .auto-style3 {
+            width: 656px;
+        }
     </style>
 </head>
 <body>
@@ -22,15 +25,20 @@
         <table class="auto-style1">
             <tr>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style3">
+                    <asp:Label ID="lbl_Inicio" runat="server" Text="Destino Inicio" Font-Overline="False" Font-Underline="True"></asp:Label>
+                </td>
                 <td>&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>
-                    <asp:Label ID="lbl_Inicio" runat="server" Text="Detino Inicio"></asp:Label>
+                <td class="auto-style3">
+                    <asp:Label ID="lblProvincia" runat="server" Font-Bold="True" Text="Provincia"></asp:Label>
+                    <asp:DropDownList ID="ddlProvincia" runat="server">
+                        <asp:ListItem>--- Seleccionar ---</asp:ListItem>
+                    </asp:DropDownList>
                 </td>
                 <td>&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
@@ -40,56 +48,73 @@
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style3">
+                    <asp:Label ID="lblLocalidad" runat="server" Font-Bold="True" Text="Localidad"></asp:Label>
+                    <asp:DropDownList ID="ddlLocalidad" runat="server">
+                        <asp:ListItem>--- Seleccionar ---</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
                 <td>&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style3">
+                    <asp:Label ID="lblDestinoFinal" runat="server" Text="Destino Final" Font-Overline="False" Font-Underline="True"></asp:Label>
+                </td>
                 <td>&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style3">
+                    <asp:Label ID="lblProvinciaB" runat="server" Font-Bold="True" Text="Provincia"></asp:Label>
+                    <asp:DropDownList ID="ddlProvinciaB" runat="server">
+                        <asp:ListItem>--- Seleccionar ---</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
                 <td>&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style3">
+                    <asp:Label ID="lblLocalidadB" runat="server" Font-Bold="True" Text="Localidad"></asp:Label>
+                    <asp:DropDownList ID="ddlLocalidadB" runat="server">
+                        <asp:ListItem>--- Seleccionar ---</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
                 <td>&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
+                <td class="auto-style3">&nbsp;</td>
                 <td>&nbsp;</td>
+                <td class="auto-style2">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td class="auto-style3">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td class="auto-style2">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td class="auto-style3">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td class="auto-style2">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td class="auto-style3">&nbsp;</td>
                 <td>&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>&nbsp;</td>
