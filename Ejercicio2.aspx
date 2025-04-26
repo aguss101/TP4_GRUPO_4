@@ -40,11 +40,11 @@
                 </td>
                 <td class="auto-style4">
                     <asp:DropDownList ID="ddlIDProduct" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
-                        <asp:ListItem>Igual a:</asp:ListItem>
-                        <asp:ListItem>Mayor a:</asp:ListItem>
-                        <asp:ListItem Value="Menor a:">Menor a:</asp:ListItem>
+                        <asp:ListItem Value ="0">Igual a:</asp:ListItem>
+                        <asp:ListItem Value ="1">Mayor a:</asp:ListItem>
+                        <asp:ListItem Value="-1">Menor a:</asp:ListItem>
                     </asp:DropDownList>
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="tbIdProducto" runat="server" AutoPostBack="true" OnTextChanged="TbIdProducto_TextChanged"></asp:TextBox>
                 </td>
                 <td class="auto-style4"></td>
                 <td class="auto-style4"></td>
