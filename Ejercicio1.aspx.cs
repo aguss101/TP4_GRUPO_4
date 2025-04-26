@@ -12,7 +12,7 @@ namespace TP4_GRUPO_4
 {
     public partial class Ejercicio1 : System.Web.UI.Page
     {
-        private const string dataBaseTravel = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Viajes;Integrated Security=True;Encrypt=False";
+        private const string dataBaseTravel = "Data Source=localhost;Initial Catalog=Viajes;Integrated Security=True;Encrypt=False";
         private string querySQL = "SELECT * FROM Localidades";
         private string querySQL2 = "SELECT * FROM Provincias";
         protected void Page_Load(object sender, EventArgs e)
@@ -21,55 +21,34 @@ namespace TP4_GRUPO_4
             {
                 SqlConnection connection = new SqlConnection(dataBaseTravel);
                 connection.Open();
-
                 //Carga localidades en ddlLocalidad
                 SqlCommand sqlCommand = new SqlCommand(querySQL, connection);
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
 
-                ddlLocalidad.DataSource = sqlDataReader;
-
-                ddlLocalidad.DataTextField = "NombreLocalidad";
-                ddlLocalidad.DataValueField = "IdLocalidad";
-
-                ddlLocalidad.DataBind();
-
+                while (sqlDataReader.Read())
+                {
+                    ListItem item = new ListItem();
+                    item.Text = sqlDataReader["NombreLocalidad"].ToString();
+                    item.Value = sqlDataReader["IdProvincia"].ToString();
+                    item.Attributes["Provincia"] = sqlDataReader["IdProvincia"].ToString();
+                    ddlLocalidad.Items.Add(item);
+                    ddlLocalidadB.Items.Add(item);
+                }
                 sqlDataReader.Close();
                 //Carga provincias en ddlProvincia
                 SqlCommand sqlCommand2 = new SqlCommand(querySQL2, connection);
                 SqlDataReader sqlDataReader2 = sqlCommand2.ExecuteReader();
 
-                ddlProvincia.DataSource = sqlDataReader2;
-                ddlProvincia.DataTextField = "NombreProvincia";
-                ddlProvincia.DataValueField = "IdProvincia";
-                ddlProvincia.DataBind();
-
+                while (sqlDataReader2.Read())
+                {
+                    ListItem item = new ListItem();
+                    item.Text = sqlDataReader2["NombreProvincia"].ToString();
+                    item.Value = sqlDataReader2["IdProvincia"].ToString();
+                    ddlProvincia.Items.Add(item);
+                    ddlProvinciaB.Items.Add(item);
+                }
                 sqlDataReader2.Close();
-                //Carga provincias en ddlProvinciaB
-                SqlCommand sqlCommand3 = new SqlCommand(querySQL2, connection);
-                SqlDataReader sqlDataReader3 = sqlCommand3.ExecuteReader();
-
-                ddlProvinciaB.DataSource = sqlDataReader3;
-                ddlProvinciaB.DataTextField = "NombreProvincia";
-                ddlProvinciaB.DataValueField = "IdProvincia";
-                ddlProvinciaB.DataBind();
-
-                sqlDataReader3.Close();
-                //Carga localidades en ddllocalidadB
-                SqlCommand sqlCommand4 = new SqlCommand(querySQL, connection);
-                SqlDataReader sqlDataReader4 = sqlCommand4.ExecuteReader();
-
-                ddlLocalidadB.DataSource = sqlDataReader4;
-                ddlLocalidadB.DataTextField = "NombreLocalidad";
-                ddlLocalidadB.DataValueField = "IdLocalidad";
-                ddlLocalidadB.DataBind();
-
-                sqlDataReader4.Close();
                 connection.Close();
-
-                ddlProvincia.Items.Insert(0, new ListItem("--- Seleccione una provincia ---", "0"));
-                ddlProvinciaB.Items.Insert(0, new ListItem("--- Seleccione una provincia ---", "0"));
-                ddlLocalidad.Items.Insert(0, new ListItem("--- Seleccione una localidad ---", "0"));
-                ddlLocalidadB.Items.Insert(0, new ListItem("--- Seleccione una localidad ---", "0"));
             }
         }
         protected void btnVolver_Click(object sender, EventArgs e)
@@ -78,7 +57,27 @@ namespace TP4_GRUPO_4
         }
         protected void ddlProvincia_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Codigo a ejecutar cuando cambias la provincia
+            if(ddlProvincia.SelectedIndex == 0)
+            {
+                foreach(ListItem item in ddlLocalidad.Items) item.Enabled = true;
+                foreach(ListItem item in ddlProvinciaB.Items) item.Enabled = true;
+            }
+            else
+            {
+                foreach (ListItem item in ddlLocalidad.Items)
+                {
+                    if (item.Value == ddlProvincia.SelectedValue) item.Enabled = true;
+                    else if (item.Value != "0") item.Enabled = false;
+                }
+
+                foreach (ListItem item in ddlProvinciaB.Items)
+                {
+                    if (item.Value == ddlProvincia.SelectedValue) item.Enabled = false;
+                    else item.Enabled = true;
+                }
+            }
+                
+            ddlLocalidad.SelectedValue = "0";
         }
         protected void ddlProvinciaB_SelectedIndexChanged(object sender, EventArgs e)
         {

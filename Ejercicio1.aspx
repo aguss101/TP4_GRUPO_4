@@ -36,9 +36,8 @@
                 <td>&nbsp;</td>
                 <td class="auto-style3">
                     <asp:Label ID="lblProvincia" runat="server" Font-Bold="True" Text="Provincia"></asp:Label>
-                    <asp:DropDownList ID="ddlProvincia" runat="server" OnSelectedIndexChanged="ddlProvincia_SelectedIndexChanged">
-                        <asp:ListItem Selected="True">--- Seleccione Provincia ---</asp:ListItem>
-                        <asp:ListItem>--Seleccione provincia--</asp:ListItem>
+                    <asp:DropDownList ID="ddlProvincia" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlProvincia_SelectedIndexChanged">
+                        <asp:ListItem Selected="True" Value="0">--- Seleccione Provincia ---</asp:ListItem>
                     </asp:DropDownList>
                 </td>
                 <td>&nbsp;</td>
@@ -52,7 +51,7 @@
                 <td class="auto-style3">
                     <asp:Label ID="lblLocalidad" runat="server" Font-Bold="True" Text="Localidad"></asp:Label>
                     <asp:DropDownList ID="ddlLocalidad" runat="server" OnSelectedIndexChanged="ddlLocalidad_SelectedIndexChanged">
-                        <asp:ListItem>--- Seleccione Localidad ---</asp:ListItem>
+                        <asp:ListItem Selected="True" Value="0">--- Seleccione Localidad ---</asp:ListItem>
                     </asp:DropDownList>
                 </td>
                 <td>&nbsp;</td>
@@ -73,7 +72,7 @@
                 <td class="auto-style3">
                     <asp:Label ID="lblProvinciaB" runat="server" Font-Bold="True" Text="Provincia"></asp:Label>
                     <asp:DropDownList ID="ddlProvinciaB" runat="server" OnSelectedIndexChanged="ddlProvinciaB_SelectedIndexChanged">
-                        <asp:ListItem>--- Seleccione Provincia ---</asp:ListItem>
+                        <asp:ListItem Selected="True" Value="0">--- Seleccione Provincia ---</asp:ListItem>
                     </asp:DropDownList>
                 </td>
                 <td>&nbsp;</td>
@@ -85,7 +84,7 @@
                 <td class="auto-style3">
                     <asp:Label ID="lblLocalidadB" runat="server" Font-Bold="True" Text="Localidad"></asp:Label>
                     <asp:DropDownList ID="ddlLocalidadB" runat="server" OnSelectedIndexChanged="ddlLocalidadB_SelectedIndexChanged">
-                        <asp:ListItem>--- Seleccione Localidad ---</asp:ListItem>
+                        <asp:ListItem Selected="True" Value="0">--- Seleccione Localidad ---</asp:ListItem>
                     </asp:DropDownList>
                 </td>
                 <td>&nbsp;</td>
