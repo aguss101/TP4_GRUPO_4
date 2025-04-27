@@ -20,6 +20,27 @@
         .auto-style4 {
             height: 30px;
         }
+        .auto-style5 {
+            width: 275px;
+        }
+        .auto-style6 {
+            height: 30px;
+            width: 275px;
+        }
+        .auto-style7 {
+            width: 381px;
+        }
+        .auto-style8 {
+            height: 30px;
+            width: 381px;
+        }
+        .auto-style9 {
+            width: 393px;
+        }
+        .auto-style10 {
+            height: 30px;
+            width: 393px;
+        }
     </style>
 </head>
 <body>
@@ -29,93 +50,99 @@
         <table class="auto-style1">
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">
                     <asp:Label ID="lbl_IDp" runat="server" Text="Id Producto:"></asp:Label>
                 </td>
-                <td class="auto-style4">
+                <td class="auto-style6">
                     <asp:DropDownList ID="ddlIDProduct" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
                         <asp:ListItem Value ="0">Igual a:</asp:ListItem>
                         <asp:ListItem Value ="1">Mayor a:</asp:ListItem>
                         <asp:ListItem Value="-1">Menor a:</asp:ListItem>
                     </asp:DropDownList>
-                    <asp:TextBox ID="tbIdProducto" runat="server" AutoPostBack="true" OnTextChanged="TbIdProducto_TextChanged"></asp:TextBox>
+                    <asp:TextBox ID="txt_IDp" runat="server" AutoPostBack="true"  Height="25px"></asp:TextBox>
                 </td>
-                <td class="auto-style4"></td>
-                <td class="auto-style4"></td>
+                <td class="auto-style10"></td>
+                <td class="auto-style8"></td>
                 <td class="auto-style4">
                     <asp:Button ID="btnVolver" runat="server" OnClick="btnVolver_Click" Text="Volver" />
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">Id Categoria:</td>
-                <td>
-                    <asp:DropDownList ID="ddlIDCategory" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
-                        <asp:ListItem>Igual a:</asp:ListItem>
-                        <asp:ListItem>Mayor a:</asp:ListItem>
-                        <asp:ListItem>Menor a:</asp:ListItem>
-                    </asp:DropDownList>
-                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                <td class="auto-style2">
+                    <asp:Label ID="lbl_IDc" runat="server" Text="Id Categoria:"></asp:Label>
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style5">
+                    <asp:DropDownList ID="ddlIDCategory" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                        <asp:ListItem Value="0">Igual a:</asp:ListItem>
+                        <asp:ListItem Value="1">Mayor a:</asp:ListItem>
+                        <asp:ListItem Value="-1">Menor a:</asp:ListItem>
+                    </asp:DropDownList>
+                    <asp:TextBox ID="txt_IDc" runat="server" AutoPostBack="true" Height="25px" ></asp:TextBox>
+                </td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td>
+                <td class="auto-style5">
+                    <asp:Button ID="btnFiltrar" runat="server" AutoPostBack="true" OnClick="btnFiltrar_Click" Text="Filtrar" />
+&nbsp;&nbsp;
+                    <asp:Button ID="btnQuitar_Filtro" runat="server" AutoPostBack="true" Text="Quitar Filtro" Width="97px" />
+                </td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td class="auto-style5">
                     <asp:GridView ID="gvProductos" runat="server">
                     </asp:GridView>
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
         </table>

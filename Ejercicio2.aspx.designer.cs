@@ -42,13 +42,13 @@ namespace TP4_GRUPO_4
         protected global::System.Web.UI.WebControls.DropDownList ddlIDProduct;
 
         /// <summary>
-        /// Control tbIdProducto.
+        /// Control txt_IDp.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbIdProducto;
+        protected global::System.Web.UI.WebControls.TextBox txt_IDp;
 
         /// <summary>
         /// Control btnVolver.
@@ -60,6 +60,15 @@ namespace TP4_GRUPO_4
         protected global::System.Web.UI.WebControls.Button btnVolver;
 
         /// <summary>
+        /// Control lbl_IDc.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_IDc;
+
+        /// <summary>
         /// Control ddlIDCategory.
         /// </summary>
         /// <remarks>
@@ -69,13 +78,31 @@ namespace TP4_GRUPO_4
         protected global::System.Web.UI.WebControls.DropDownList ddlIDCategory;
 
         /// <summary>
-        /// Control TextBox2.
+        /// Control txt_IDc.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox txt_IDc;
+
+        /// <summary>
+        /// Control btnFiltrar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnFiltrar;
+
+        /// <summary>
+        /// Control btnQuitar_Filtro.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnQuitar_Filtro;
 
         /// <summary>
         /// Control gvProductos.
