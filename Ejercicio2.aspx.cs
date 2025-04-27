@@ -11,7 +11,7 @@ namespace TP4_GRUPO_4
 {
     public partial class Ejercicio_2 : System.Web.UI.Page
     {
-    private const string dataBaseNeptuno = "Data Source=localhost;Initial Catalog=Neptuno;Integrated Security=True;Encrypt=False";
+    private const string dataBaseNeptuno = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Neptuno;Integrated Security=True;Encrypt=False";
         private string querysql = "SELECT IDProducto,NombreProducto,IDCategoría,CantidadPorUnidad,PrecioUnidad FROM Productos";
         protected void Page_Load(object sender, EventArgs e)
         {
