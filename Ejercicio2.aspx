@@ -41,6 +41,25 @@
             height: 30px;
             width: 393px;
         }
+        .auto-style11 {
+            width: 96px;
+            height: 34px;
+        }
+        .auto-style12 {
+            width: 275px;
+            height: 34px;
+        }
+        .auto-style13 {
+            width: 393px;
+            height: 34px;
+        }
+        .auto-style14 {
+            width: 381px;
+            height: 34px;
+        }
+        .auto-style15 {
+            height: 34px;
+        }
     </style>
 </head>
 <body>
@@ -97,15 +116,15 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style5">
+                <td class="auto-style11"></td>
+                <td class="auto-style12">
                     <asp:Button ID="btnFiltrar" runat="server" AutoPostBack="true" OnClick="btnFiltrar_Click" Text="Filtrar" />
 &nbsp;&nbsp;
                     <asp:Button ID="btnQuitar_Filtro" runat="server" AutoPostBack="true" Text="Quitar Filtro" Width="97px" OnClick="btnQuitar_Filtro_Click" />
                 </td>
-                <td class="auto-style9">&nbsp;</td>
-                <td class="auto-style7">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style13"></td>
+                <td class="auto-style14"></td>
+                <td class="auto-style15"></td>
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
