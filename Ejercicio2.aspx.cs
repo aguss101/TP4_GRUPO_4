@@ -17,14 +17,15 @@ namespace TP4_GRUPO_4
         {
             if (!IsPostBack)
             {
-                cargarProductosxIDp();
-                cargarProductosxCategoria();
+                cargarProductos();
                 
             }
         }
 
-        protected void cargarProductosxIDp(string filtro = "")
+
+        protected void cargarProductos(string filtroProducto = "", string filtroCategoria = "")
         {
+
             using (SqlConnection connection = new SqlConnection(dataBaseNeptuno))
             {
                 connection.Open();
@@ -35,47 +36,49 @@ namespace TP4_GRUPO_4
 
                 DataTable productos = dataset.Tables["TablaProductos"];
 
-                if (!string.IsNullOrEmpty(filtro))
-                {
-                    string filterExpression = "";
+                string filterExpression = "";
 
-                    if (ddlIDProduct.SelectedValue == "0") filterExpression = $"IdProducto = {filtro}";
-                    else if (ddlIDProduct.SelectedValue == "1") filterExpression = $"IdProducto > {filtro}";
-                    else if (ddlIDProduct.SelectedValue == "-1") filterExpression = $"IdProducto < {filtro}";
-                    productos.DefaultView.RowFilter = filterExpression;
-                    txt_IDp.Text = "";
+                
+                if (!string.IsNullOrEmpty(filtroProducto))
+                {
+                    
+                    if (ddlIDProduct.SelectedValue == "0") filterExpression += $"IdProducto = {filtroProducto}";
+                    else if (ddlIDProduct.SelectedValue == "1") filterExpression += $"IdProducto > {filtroProducto}";
+                    else if (ddlIDProduct.SelectedValue == "-1") filterExpression += $"IdProducto < {filtroProducto}";
                 }
-                    gvProductos.DataSource = productos;
-                    gvProductos.DataBind();
+
+               
+                if (!string.IsNullOrEmpty(filtroCategoria))
+                {
+                 
+                    if (!string.IsNullOrEmpty(filterExpression)) filterExpression += " AND ";
+                   
+                    if (ddlIDCategory.SelectedValue == "0") filterExpression += $"IdCategoría = {filtroCategoria}";
+                    else if (ddlIDCategory.SelectedValue == "1") filterExpression += $"IdCategoría > {filtroCategoria}";
+                    else if (ddlIDCategory.SelectedValue == "-1") filterExpression += $"IdCategoría < {filtroCategoria}";
+                }
+
+               
+                if (!string.IsNullOrEmpty(filterExpression))
+                {
+                    productos.DefaultView.RowFilter = filterExpression;
+                }
+
+                gvProductos.DataSource = productos;
+                gvProductos.DataBind();
+                connection.Close();
             }
+
         }
-        protected void cargarProductosxCategoria(string filtro = "")
+
+        protected void btnFiltrar_Click(object sender, EventArgs e)
         {
-            using (SqlConnection connection = new SqlConnection(dataBaseNeptuno))
-            {
-                connection.Open();
+            string filtroProducto = txt_IDp.Text;
+            string filtroCategoria = txt_IDc.Text;
 
-                SqlDataAdapter sqldataadapter = new SqlDataAdapter(querysql, connection);
-                DataSet dataset = new DataSet();
-                sqldataadapter.Fill(dataset, "TablaProductos");
-
-                DataTable productos = dataset.Tables["TablaProductos"];
-
-                if (!string.IsNullOrEmpty(filtro))
-                {
-                    string filterExpression = "";
-
-                    if (ddlIDCategory.SelectedValue == "0") filterExpression = $"IdCategoría = {filtro}";
-                    else if (ddlIDCategory.SelectedValue == "1") filterExpression = $"IdCategoría > {filtro}";
-                    else if (ddlIDCategory.SelectedValue == "-1") filterExpression = $"IdCategoría < {filtro}";
-
-                    productos.DefaultView.RowFilter = filterExpression;
-                    txt_IDc.Text = "";
-                }
-                    gvProductos.DataSource = productos;
-                    gvProductos.DataBind();
-            }
+            cargarProductos(filtroProducto, filtroCategoria);
         }
+
 
         protected void btnVolver_Click(object sender, EventArgs e)
         {
@@ -86,17 +89,7 @@ namespace TP4_GRUPO_4
 
         }
 
-        protected void btnFiltrar_Click(object sender, EventArgs e)
-        {
-            if (int.TryParse(txt_IDc.Text, out int idValuep))
-            {
-                cargarProductosxCategoria(idValuep.ToString());
-            }
-            if (int.TryParse(txt_IDp.Text, out int idValuec))
-            {
-                cargarProductosxIDp(idValuec.ToString());
-            }
-        }
+      
 
         protected void btnQuitar_Filtro_Click(object sender, EventArgs e)
         {
