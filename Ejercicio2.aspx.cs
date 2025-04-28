@@ -96,5 +96,22 @@ namespace TP4_GRUPO_4
                 cargarProductosxIDp(idValuec.ToString());
             }
         }
+
+        protected void btnQuitar_Filtro_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection connection = new SqlConnection(dataBaseNeptuno))
+            {
+                connection.Open();
+
+                SqlDataAdapter sqldataadapter = new SqlDataAdapter(querysql, connection);
+                DataSet dataset = new DataSet();
+                sqldataadapter.Fill(dataset, "TablaProductos");
+
+                DataTable productos = dataset.Tables["TablaProductos"];
+
+                gvProductos.DataSource = productos;
+                gvProductos.DataBind();
+            }
+        }
     }
 }

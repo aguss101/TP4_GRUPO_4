@@ -101,7 +101,7 @@
                 <td class="auto-style5">
                     <asp:Button ID="btnFiltrar" runat="server" AutoPostBack="true" OnClick="btnFiltrar_Click" Text="Filtrar" />
 &nbsp;&nbsp;
-                    <asp:Button ID="btnQuitar_Filtro" runat="server" AutoPostBack="true" Text="Quitar Filtro" Width="97px" />
+                    <asp:Button ID="btnQuitar_Filtro" runat="server" AutoPostBack="true" Text="Quitar Filtro" Width="97px" OnClick="btnQuitar_Filtro_Click" />
                 </td>
                 <td class="auto-style9">&nbsp;</td>
                 <td class="auto-style7">&nbsp;</td>
