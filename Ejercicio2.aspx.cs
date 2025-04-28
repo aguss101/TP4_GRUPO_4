@@ -45,6 +45,7 @@ namespace TP4_GRUPO_4
                     if (ddlIDProduct.SelectedValue == "0") filterExpression += $"IdProducto = {filtroProducto}";
                     else if (ddlIDProduct.SelectedValue == "1") filterExpression += $"IdProducto > {filtroProducto}";
                     else if (ddlIDProduct.SelectedValue == "-1") filterExpression += $"IdProducto < {filtroProducto}";
+                    txt_IDp.Text = "";
                 }
 
                
@@ -56,6 +57,7 @@ namespace TP4_GRUPO_4
                     if (ddlIDCategory.SelectedValue == "0") filterExpression += $"IdCategoría = {filtroCategoria}";
                     else if (ddlIDCategory.SelectedValue == "1") filterExpression += $"IdCategoría > {filtroCategoria}";
                     else if (ddlIDCategory.SelectedValue == "-1") filterExpression += $"IdCategoría < {filtroCategoria}";
+                    txt_IDc.Text = "";
                 }
 
                

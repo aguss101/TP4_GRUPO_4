@@ -29,7 +29,7 @@ namespace TP4_GRUPO_4
             ddlProvincia.DataBind();
             ddlProvincia.Items.Insert(0, new ListItem("[Seleccionar Provincia Inicio]", "0"));
             ddlProvinciaDestino.Items.Insert(0, new ListItem("[Seleccionar Provincia Destino]", "0"));
-            ddlLocalidad.Items.Insert(0, new ListItem("[Seleccionar Localidad]", "0"));
+            ddlLocalidad.Items.Insert(0, new ListItem("[Seleccionar Localidad Inicio]", "0"));
             ddlLocalidadB.Items.Insert(0, new ListItem("[Seleccionar Localidad Destino]", "0"));
             
         }
@@ -59,7 +59,7 @@ namespace TP4_GRUPO_4
             ddlLocalidad.DataTextField = "NombreLocalidad";
             ddlLocalidad.DataValueField = "IdLocalidad";
             ddlLocalidad.DataBind();
-            ddlLocalidad.Items.Insert(0, new ListItem("[Seleccionar Localidad]", "0"));
+            ddlLocalidad.Items.Insert(0, new ListItem("[Seleccionar Localidad Inicio]", "0"));
 
 
 
@@ -67,7 +67,11 @@ namespace TP4_GRUPO_4
             ddlProvinciaDestino.DataTextField = "NombreProvincia";
             ddlProvinciaDestino.DataValueField = "IdProvincia";
             ddlProvinciaDestino.DataBind();
-            ddlProvinciaDestino.Items.Insert(0, new ListItem("[Seleccionar Provincia de Destino]", "0"));
+            ddlProvinciaDestino.Items.Insert(0, new ListItem("[Seleccionar Provincia Destino]", "0"));
+
+            // Volver a valor inicial el ddlLocalidadB
+            ddlLocalidadB.Items.Clear();
+            ddlLocalidadB.Items.Insert(0, new ListItem("[Seleccionar Localidad Destino]", "0"));
         }
         protected void ddlProvinciaDestino_SelectedIndexChanged(object sender, EventArgs e)
         {
