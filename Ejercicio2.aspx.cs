@@ -19,7 +19,15 @@ namespace TP4_GRUPO_4
             {
                 cargarProductosxIDp();
                 cargarProductosxCategoria();
-                
+                /*if (txt_IDp.Text == null && txt_IDc.Text == null)
+                {
+                    reiniciarTabla();
+                }
+                else
+                {
+                    cargarProductosxIDp();
+                    cargarProductosxCategoria();
+                }*/
             }
         }
 
@@ -45,8 +53,8 @@ namespace TP4_GRUPO_4
                     productos.DefaultView.RowFilter = filterExpression;
                     txt_IDp.Text = "";
                 }
-                    gvProductos.DataSource = productos;
-                    gvProductos.DataBind();
+                gvProductos.DataSource = productos;
+                gvProductos.DataBind();
             }
         }
         protected void cargarProductosxCategoria(string filtro = "")
@@ -88,7 +96,17 @@ namespace TP4_GRUPO_4
 
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
-            if (int.TryParse(txt_IDc.Text, out int idValuep))
+            if (int.TryParse(txt_IDc.Text, out int idValuep) && int.TryParse(txt_IDp.Text, out int idValuec))
+            {
+                cargarProductosxCategoria(idValuep.ToString());
+                cargarProductosxIDp(idValuec.ToString());
+            }
+            else
+            {
+                reiniciarTabla();
+            }
+            /*
+             * if (int.TryParse(txt_IDc.Text, out int idValuep))
             {
                 cargarProductosxCategoria(idValuep.ToString());
             }
@@ -96,9 +114,14 @@ namespace TP4_GRUPO_4
             {
                 cargarProductosxIDp(idValuec.ToString());
             }
+            */
         }
 
         protected void btnQuitar_Filtro_Click(object sender, EventArgs e)
+        {
+            reiniciarTabla();
+        }
+        protected void reiniciarTabla()
         {
             using (SqlConnection connection = new SqlConnection(dataBaseNeptuno))
             {
