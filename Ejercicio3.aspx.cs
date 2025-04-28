@@ -15,16 +15,19 @@ namespace TP4_GRUPO_4
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
-            {
-                //SqlConnection connection = new SqlConnection(dataBaseLibrary);
-                //connection.Open();
+            {   
+                // Establecer la conexión a la base de datos
+                SqlConnection connection = new SqlConnection(dataBaseLibrary);
+                connection.Open();
 
-                //SqlCommand sqlCommand = new SqlCommand(querySQL,connection);
-                //SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+                // Consulta SQL que se desea ejecutar
 
-                //ddlThemes.DataSource = sqlDataReader;
-                //ddlThemes.DataBind();
-                //connection.Close();
+                SqlCommand sqlCommand = new SqlCommand(querySQL,connection);
+                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+
+                ///ddlThemes.DataSource = sqlDataReader;
+                ///ddlThemes.DataBind();
+                connection.Close();
 
                 
             }
@@ -33,6 +36,22 @@ namespace TP4_GRUPO_4
         protected void btnVolver_Click(object sender, EventArgs e)
         {
             Response.Redirect("MainForm.aspx");
+        }
+
+        protected void lbBooks_Click(object sender, EventArgs e)
+        {
+            string temaSeleccionado = (ddlThemes.SelectedIndex + 1).ToString();
+            Response.Redirect("Ejercicio3b.aspx?tema=" + temaSeleccionado);
+        }
+
+        protected void ddlThemes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void SqlDataLibrary_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
         }
     }
 }

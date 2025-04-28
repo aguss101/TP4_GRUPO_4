@@ -52,9 +52,9 @@
                     <asp:Label ID="lblTheme" runat="server" Text="Seleccionar Tema:"></asp:Label>
                 </td>
                 <td class="auto-style4">
-                    <asp:DropDownList ID="ddlThemes" runat="server" DataSourceID="SqlDataLibrary" DataValueField="Tema">
+                    <asp:DropDownList ID="ddlThemes" runat="server" DataSourceID="SqlDataLibrary" DataValueField="Tema" OnSelectedIndexChanged="ddlThemes_SelectedIndexChanged">
                     </asp:DropDownList>
-                    <asp:SqlDataSource ID="SqlDataLibrary" runat="server" ConnectionString="<%$ ConnectionStrings:LibreriaConnectionString %>" ProviderName="<%$ ConnectionStrings:LibreriaConnectionString.ProviderName %>" SelectCommand="SELECT [Tema] FROM [Temas]"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataLibrary" runat="server" ConnectionString="<%$ ConnectionStrings:LibreriaConnectionString %>" ProviderName="<%$ ConnectionStrings:LibreriaConnectionString.ProviderName %>" SelectCommand="SELECT [Tema] FROM [Temas]" OnSelecting="SqlDataLibrary_Selecting"></asp:SqlDataSource>
                 </td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>
@@ -69,7 +69,7 @@
             </tr>
             <tr>
                 <td class="auto-style3">
-                    <asp:LinkButton ID="lbBooks" runat="server">Ver Libros</asp:LinkButton>
+                    <asp:LinkButton ID="lbBooks" runat="server" OnClick="lbBooks_Click">Ver Libros</asp:LinkButton>
                 </td>
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
@@ -106,10 +106,10 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style5"></td>
+                <td class="auto-style6"></td>
+                <td class="auto-style7"></td>
+                <td class="auto-style8"></td>
             </tr>
         </table>
     </form>
