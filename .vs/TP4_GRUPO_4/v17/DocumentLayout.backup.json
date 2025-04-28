@@ -1,13 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\agusp\\Downloads\\Git\\TP4_GRUPO_4\\",
+  "WorkspaceRootPath": "C:\\Users\\WinByLato\\Desktop\\TP4_GRUPO_4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|C:\\Users\\agusp\\Downloads\\Git\\TP4_GRUPO_4\\ejercicio2.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|c:\\users\\winbylato\\desktop\\tp4_grupo_4\\ejercicio1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|solutionrelative:ejercicio1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|c:\\users\\winbylato\\desktop\\tp4_grupo_4\\ejercicio1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|solutionrelative:ejercicio1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|C:\\Users\\WinByLato\\Desktop\\TP4_GRUPO_4\\ejercicio2.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|solutionrelative:ejercicio2.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|c:\\users\\agusp\\downloads\\git\\tp4_grupo_4\\ejercicio2.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|C:\\Users\\WinByLato\\Desktop\\TP4_GRUPO_4\\ejercicio2.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{835FAB9F-F211-4D7B-AF15-B2AFA04F1A8D}|TP4_GRUPO_4.csproj|solutionrelative:ejercicio2.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,12 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -35,27 +39,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Ejercicio2.aspx",
-              "DocumentMoniker": "C:\\Users\\agusp\\Downloads\\Git\\TP4_GRUPO_4\\Ejercicio2.aspx",
-              "RelativeDocumentMoniker": "Ejercicio2.aspx",
-              "ToolTip": "C:\\Users\\agusp\\Downloads\\Git\\TP4_GRUPO_4\\Ejercicio2.aspx*",
-              "RelativeToolTip": "Ejercicio2.aspx*",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Title": "Ejercicio1.aspx",
+              "DocumentMoniker": "C:\\Users\\WinByLato\\Desktop\\TP4_GRUPO_4\\Ejercicio1.aspx",
+              "RelativeDocumentMoniker": "Ejercicio1.aspx",
+              "ToolTip": "C:\\Users\\WinByLato\\Desktop\\TP4_GRUPO_4\\Ejercicio1.aspx",
+              "RelativeToolTip": "Ejercicio1.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-04-27T17:06:24.481Z",
+              "WhenOpened": "2025-04-28T06:50:36.67Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Ejercicio2.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\agusp\\Downloads\\Git\\TP4_GRUPO_4\\Ejercicio2.aspx.cs",
-              "RelativeDocumentMoniker": "Ejercicio2.aspx.cs",
-              "ToolTip": "C:\\Users\\agusp\\Downloads\\Git\\TP4_GRUPO_4\\Ejercicio2.aspx.cs",
-              "RelativeToolTip": "Ejercicio2.aspx.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAgwFEAAAAJAAAAAAAAAA==",
+              "Title": "Ejercicio1.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\WinByLato\\Desktop\\TP4_GRUPO_4\\Ejercicio1.aspx.cs",
+              "RelativeDocumentMoniker": "Ejercicio1.aspx.cs",
+              "ToolTip": "C:\\Users\\WinByLato\\Desktop\\TP4_GRUPO_4\\Ejercicio1.aspx.cs",
+              "RelativeToolTip": "Ejercicio1.aspx.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAIwEUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T17:06:29.724Z",
+              "WhenOpened": "2025-04-27T21:34:41.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Ejercicio2.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\WinByLato\\Desktop\\TP4_GRUPO_4\\Ejercicio2.aspx.cs",
+              "RelativeDocumentMoniker": "Ejercicio2.aspx.cs",
+              "ToolTip": "C:\\Users\\WinByLato\\Desktop\\TP4_GRUPO_4\\Ejercicio2.aspx.cs",
+              "RelativeToolTip": "Ejercicio2.aspx.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwBUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T18:26:30.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Ejercicio2.aspx",
+              "DocumentMoniker": "C:\\Users\\WinByLato\\Desktop\\TP4_GRUPO_4\\Ejercicio2.aspx",
+              "RelativeDocumentMoniker": "Ejercicio2.aspx",
+              "ToolTip": "C:\\Users\\WinByLato\\Desktop\\TP4_GRUPO_4\\Ejercicio2.aspx",
+              "RelativeToolTip": "Ejercicio2.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-27T17:06:24.481Z",
               "EditorCaption": ""
             }
           ]
